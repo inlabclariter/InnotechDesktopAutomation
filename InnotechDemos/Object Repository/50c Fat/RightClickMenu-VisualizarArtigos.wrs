@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>RightClickMenu-VisualizarArtigos</name>
+   <tag></tag>
+   <locator>Visualizar Artigos</locator>
+   <locatorStrategy>NAME</locatorStrategy>
+   <properties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Name</name>
+      <type>Main</type>
+      <value>Visualizar Artigos</value>
+   </properties>
+</WindowsElementEntity>

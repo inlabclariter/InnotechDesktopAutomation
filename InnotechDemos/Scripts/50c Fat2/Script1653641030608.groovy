@@ -10,8 +10,8 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -43,10 +43,9 @@ Windows.click(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), 
 
 Windows.click(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), FailureHandling.STOP_ON_FAILURE)
 
-for (i = 1; i < 5; i++) {
-    Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), 'F', FailureHandling.STOP_ON_FAILURE)
-}
-
+//for (i = 1; i < 5; i++) {
+//    Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), 'F', FailureHandling.STOP_ON_FAILURE)
+//}
 Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), Keys.chord(Keys.ENTER), FailureHandling.STOP_ON_FAILURE)
 
 Windows.click(findWindowsObject('Object Repository/50c Fat/NumberSelect1'), FailureHandling.STOP_ON_FAILURE)
@@ -63,8 +62,13 @@ Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/HoursSelect'), Key
 
 Windows.click(findWindowsObject('Object Repository/50c Fat/CustomersSearch'), FailureHandling.STOP_ON_FAILURE)
 
-Windows.click(findWindowsObject('Object Repository/50c Fat/CARNERIROeSOUSA'), FailureHandling.STOP_ON_FAILURE)
+Windows.doubleClick(findWindowsObject('Object Repository/50c Fat/CARNERIROeSOUSA'), FailureHandling.STOP_ON_FAILURE)
+
+Windows.rightClick(findWindowsObject('Object Repository/50c Fat/Referencia'), FailureHandling.STOP_ON_FAILURE)
+
+Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/RightClickMenu-VisualizarArtigos'), Keys.chord(Keys.ENTER), FailureHandling.STOP_ON_FAILURE)
 
 
-
+//Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/Referencia'), Keys.chord(Keys.ENTER), FailureHandling.STOP_ON_FAILURE) 
+//Keys.chord(Keys.DOWN, Keys.DOWN, Keys.DOWN, Keys.ENTER)
 
