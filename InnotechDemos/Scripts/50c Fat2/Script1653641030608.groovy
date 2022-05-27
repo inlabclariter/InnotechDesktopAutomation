@@ -46,6 +46,7 @@ Windows.click(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), 
 //for (i = 1; i < 5; i++) {
 //    Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), 'F', FailureHandling.STOP_ON_FAILURE)
 //}
+
 Windows.sendKeys(findWindowsObject('Object Repository/50c Fat/OptionListFactura'), Keys.chord(Keys.ENTER), FailureHandling.STOP_ON_FAILURE)
 
 Windows.click(findWindowsObject('Object Repository/50c Fat/NumberSelect1'), FailureHandling.STOP_ON_FAILURE)
